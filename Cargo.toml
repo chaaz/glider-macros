@@ -1,0 +1,19 @@
+[package]
+name = "glider-macros"
+version = "0.1.1"
+edition = "2021"
+
+[dependencies]
+quote = "1.0.18"
+proc-macro2 = "1.0.38"
+
+[dependencies.syn]
+version = "1.0.92"
+features = ["full"]
+
+[dev-dependencies.tokio]
+version = "1.18.1"
+features = ["rt-multi-thread", "macros", "time"]
+
+[lib]
+proc-macro = true
